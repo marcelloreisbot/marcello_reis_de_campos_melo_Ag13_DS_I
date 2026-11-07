@@ -1,0 +1,59 @@
+/* ===================================
+   ESTILO PRINCIPAL DO PORTAL
+=================================== */
+
+/* Configuração geral da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+/* Flexbox para organizar as três seções */
+#container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Estilo comum para todas as seções */
+.secao {
+    flex: 1;
+    background-color: white;
+    box-shadow: 2px 2px 8px gray;
+}
+
+/* Classe usada nos títulos */
+.titulo {
+    text-align: center;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+/* Classe compartilhada para imagens */
+.imagem {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* IDs para personalizar cada seção */
+#filmes {
+    background-color: #ffe4e1;
+}
+
+#musica {
+    background-color: #e6ffe6;
+}
+
+#games {
+    background-color: #e6f0ff;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 900px) {
+    #container {
+        flex-direction: column;
+    }
+}
